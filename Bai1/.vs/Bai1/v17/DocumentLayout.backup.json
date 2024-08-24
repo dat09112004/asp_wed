@@ -1,22 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\asp_wed\\Bai1\\",
+  "WorkspaceRootPath": "E:\\NoName\\asp_wed\\Bai1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A338D249-E9DF-4E2C-8DC5-4631FA8DE7D2}|Bai1\\Bai1.csproj|e:\\asp_wed\\bai1\\bai1\\bai1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A338D249-E9DF-4E2C-8DC5-4631FA8DE7D2}|Bai1\\Bai1.csproj|solutionrelative:bai1\\bai1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A338D249-E9DF-4E2C-8DC5-4631FA8DE7D2}|Bai1\\Bai1.csproj|e:\\asp_wed\\bai1\\bai1\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A338D249-E9DF-4E2C-8DC5-4631FA8DE7D2}|Bai1\\Bai1.csproj|solutionrelative:bai1\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A338D249-E9DF-4E2C-8DC5-4631FA8DE7D2}|Bai1\\Bai1.csproj|e:\\asp_wed\\bai1\\bai1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A338D249-E9DF-4E2C-8DC5-4631FA8DE7D2}|Bai1\\Bai1.csproj|solutionrelative:bai1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A338D249-E9DF-4E2C-8DC5-4631FA8DE7D2}|Bai1\\Bai1.csproj|e:\\asp_wed\\bai1\\bai1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A338D249-E9DF-4E2C-8DC5-4631FA8DE7D2}|Bai1\\Bai1.csproj|e:\\noname\\asp_wed\\bai1\\bai1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A338D249-E9DF-4E2C-8DC5-4631FA8DE7D2}|Bai1\\Bai1.csproj|solutionrelative:bai1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A338D249-E9DF-4E2C-8DC5-4631FA8DE7D2}|Bai1\\Bai1.csproj|e:\\noname\\asp_wed\\bai1\\bai1\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A338D249-E9DF-4E2C-8DC5-4631FA8DE7D2}|Bai1\\Bai1.csproj|solutionrelative:bai1\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,59 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\NoName\\asp_wed\\Bai1\\Bai1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Bai1\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\NoName\\asp_wed\\Bai1\\Bai1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Bai1\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-24T10:06:15.94Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": ".gitignore",
-              "DocumentMoniker": "E:\\asp_wed\\Bai1\\Bai1\\.gitignore",
+              "DocumentMoniker": "E:\\NoName\\asp_wed\\Bai1\\Bai1\\.gitignore",
               "RelativeDocumentMoniker": "Bai1\\.gitignore",
-              "ToolTip": "E:\\asp_wed\\Bai1\\Bai1\\.gitignore",
+              "ToolTip": "E:\\NoName\\asp_wed\\Bai1\\Bai1\\.gitignore",
               "RelativeToolTip": "Bai1\\.gitignore",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-24T07:58:34.063Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\asp_wed\\Bai1\\Bai1\\Program.cs",
-              "RelativeDocumentMoniker": "Bai1\\Program.cs",
-              "ToolTip": "E:\\asp_wed\\Bai1\\Bai1\\Program.cs",
-              "RelativeToolTip": "Bai1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T07:51:27.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Bai1",
-              "DocumentMoniker": "E:\\asp_wed\\Bai1\\Bai1\\Bai1.csproj",
-              "RelativeDocumentMoniker": "Bai1\\Bai1.csproj",
-              "ToolTip": "E:\\asp_wed\\Bai1\\Bai1\\Bai1.csproj",
-              "RelativeToolTip": "Bai1\\Bai1.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-24T07:49:17.26Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\asp_wed\\Bai1\\Bai1\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Bai1\\Views\\Home\\Index.cshtml",
-              "ToolTip": "E:\\asp_wed\\Bai1\\Bai1\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Bai1\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-24T07:25:33.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T07:58:34.063Z"
             }
           ]
         }
