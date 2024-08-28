@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\NoName\\asp_wed\\Bai1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A338D249-E9DF-4E2C-8DC5-4631FA8DE7D2}|Bai1\\Bai1.csproj|e:\\noname\\asp_wed\\bai1\\bai1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A338D249-E9DF-4E2C-8DC5-4631FA8DE7D2}|Bai1\\Bai1.csproj|solutionrelative:bai1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A338D249-E9DF-4E2C-8DC5-4631FA8DE7D2}|Bai1\\Bai1.csproj|e:\\noname\\asp_wed\\bai1\\bai1\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A338D249-E9DF-4E2C-8DC5-4631FA8DE7D2}|Bai1\\Bai1.csproj|solutionrelative:bai1\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
@@ -18,11 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\NoName\\asp_wed\\Bai1\\Bai1\\Program.cs",
+              "RelativeDocumentMoniker": "Bai1\\Program.cs",
+              "ToolTip": "E:\\NoName\\asp_wed\\Bai1\\Bai1\\Program.cs",
+              "RelativeToolTip": "Bai1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T07:21:39.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\NoName\\asp_wed\\Bai1\\Bai1\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Bai1\\Views\\Home\\Index.cshtml",
@@ -30,12 +47,11 @@
               "RelativeToolTip": "Bai1\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-24T10:06:15.94Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T10:06:15.94Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": ".gitignore",
               "DocumentMoniker": "E:\\NoName\\asp_wed\\Bai1\\Bai1\\.gitignore",
               "RelativeDocumentMoniker": "Bai1\\.gitignore",
