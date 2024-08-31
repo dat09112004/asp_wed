@@ -1,0 +1,23 @@
+Lệnh git:
+- cd: change directory - thay đổi thư mục
+- cd.. : (quay về thư mục cha)
+- dir: (ms window): Hiển thị danh sách tập tin/ Thư mục bên trong 
+- ls: (linux, macOs): //
+- clear: dọn dẹp lệnh( dùng mũi tên để quay trở lại những câu lên cũ
+- mkdir + folder name: tạo ra thư mục mới
+- touch + 'tên file': tạo tệp  tin mới
+- echo + " nội dung": xuất nội dung
+- echo + > + 'tên file': chỉ định hướng để xuất dữ liệu( ghi đè tất cả mọi thứ 'overwrite')
+- echo + >> + 'tên file': ghi dòng mới(newline)
+- cat: hiển thị nội dung trong file
+- diff + 'tên file + 'tên file': so sánh giữa 2 file với nhau
+- rm + 'tên file': xóa(remove)
+- rm -d + tên folder: xóa folder rỗng
+- rm -r + tên folder: xóa folder + file
+- git --help: trợ giúp
+- git --version: hiển thị thông tin phiên bản git
+- git status: hiển thị trạng thái kho lưu trữ
+- git log: hiển thị lịch sử các commit
+- git init + repo name: tạo ra kho lưu trữ trống
+- git clone + repo name + clone name: tạo một bản sao được liên kết với repon
+- git config -l: xem cấu hình hiện tại

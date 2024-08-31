@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "E:\\NoName\\asp_wed\\Baitap2b\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{67F329BD-201C-4C8D-BD2A-BC93B87EF489}|Baitap2b\\Baitap2b.csproj|e:\\noname\\asp_wed\\baitap2b\\baitap2b\\views\\theloai\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{67F329BD-201C-4C8D-BD2A-BC93B87EF489}|Baitap2b\\Baitap2b.csproj|solutionrelative:baitap2b\\views\\theloai\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67F329BD-201C-4C8D-BD2A-BC93B87EF489}|Baitap2b\\Baitap2b.csproj|e:\\noname\\asp_wed\\baitap2b\\baitap2b\\controllers\\theloaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67F329BD-201C-4C8D-BD2A-BC93B87EF489}|Baitap2b\\Baitap2b.csproj|solutionrelative:baitap2b\\controllers\\theloaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67F329BD-201C-4C8D-BD2A-BC93B87EF489}|Baitap2b\\Baitap2b.csproj|e:\\noname\\asp_wed\\baitap2b\\baitap2b\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67F329BD-201C-4C8D-BD2A-BC93B87EF489}|Baitap2b\\Baitap2b.csproj|solutionrelative:baitap2b\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\NoName\\asp_wed\\Baitap2b\\Baitap2b\\Views\\TheLoai\\Index.cshtml",
-              "RelativeDocumentMoniker": "Baitap2b\\Views\\TheLoai\\Index.cshtml",
-              "ToolTip": "E:\\NoName\\asp_wed\\Baitap2b\\Baitap2b\\Views\\TheLoai\\Index.cshtml",
-              "RelativeToolTip": "Baitap2b\\Views\\TheLoai\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-28T07:36:33.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TheLoaiController.cs",
-              "DocumentMoniker": "E:\\NoName\\asp_wed\\Baitap2b\\Baitap2b\\Controllers\\TheLoaiController.cs",
-              "RelativeDocumentMoniker": "Baitap2b\\Controllers\\TheLoaiController.cs",
-              "ToolTip": "E:\\NoName\\asp_wed\\Baitap2b\\Baitap2b\\Controllers\\TheLoaiController.cs",
-              "RelativeToolTip": "Baitap2b\\Controllers\\TheLoaiController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\NoName\\asp_wed\\Baitap2b\\Baitap2b\\Program.cs",
+              "RelativeDocumentMoniker": "Baitap2b\\Program.cs",
+              "ToolTip": "E:\\NoName\\asp_wed\\Baitap2b\\Baitap2b\\Program.cs",
+              "RelativeToolTip": "Baitap2b\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T07:34:53.833Z",
+              "WhenOpened": "2024-08-31T06:13:27.137Z",
               "EditorCaption": ""
             }
           ]
