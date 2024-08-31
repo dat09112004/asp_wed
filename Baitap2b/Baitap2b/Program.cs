@@ -22,7 +22,7 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "default",
+    name: "Trang-Chu",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.MapControllerRoute(
