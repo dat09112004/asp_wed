@@ -13,7 +13,6 @@ namespace BaiTapVeNha03.Controllers
             int  ketqua = 0;
             string message = "";
 
-            // Sử dụng câu lệnh if để thực hiện phép toán
             if (pheptinh == "cong")
             {
                 ketqua = a + b;
@@ -41,11 +40,7 @@ namespace BaiTapVeNha03.Controllers
             {
                 message = "Phép tính không hợp lệ";
             }
-
-            // Lưu kết quả vào ViewBag
             ViewBag.KetQua = (message == "") ? $"Kết quả của {pheptinh} là: {ketqua}" : message;
-
-            // Trả về View
             return View();
         }
 
