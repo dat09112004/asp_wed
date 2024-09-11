@@ -528,3 +528,4 @@ E:\NoName\asp_wed\BaiTap06\obj\Debug\net8.0\refint\BaiTap06.dll
 E:\NoName\asp_wed\BaiTap06\obj\Debug\net8.0\BaiTap06.pdb
 E:\NoName\asp_wed\BaiTap06\obj\Debug\net8.0\BaiTap06.genruntimeconfig.cache
 E:\NoName\asp_wed\BaiTap06\obj\Debug\net8.0\ref\BaiTap06.dll
+E:\NoName\asp_wed\BaiTap06\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout2.cshtml.rz.scp.css
