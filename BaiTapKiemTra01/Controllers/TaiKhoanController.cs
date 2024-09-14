@@ -14,7 +14,7 @@ namespace BaiTapKiemTra01.Controllers
 		{
             if (taikhoan.Username != null)
             {
-                return Content($"Tên tài khoản: {taikhoan.Username}, Họ tên: {taikhoan.HoTen}, Tuổi: {taikhoan.Tuoi}");
+                return Content($"Tên tài khoản: {taikhoan.Username}, Mật Khẩu: {taikhoan.Password},Họ tên: {taikhoan.HoTen}, Tuổi: {taikhoan.Tuoi}");
             }
             return View(taikhoan);
         }
