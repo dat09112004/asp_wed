@@ -113,6 +113,18 @@
       "PackagePath": "staticwebassets\\images\\templatemo-services-bg.jpg"
     },
     {
+      "Id": "E:\\NoName\\asp_wed\\BaiTapKiemTra01\\wwwroot\\img\\anhchup\\Screenshot 2024-09-14 141952.png",
+      "PackagePath": "staticwebassets\\img\\anhchup\\Screenshot 2024-09-14 141952.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\BaiTapKiemTra01\\wwwroot\\img\\anhchup\\Screenshot 2024-09-14 142020.png",
+      "PackagePath": "staticwebassets\\img\\anhchup\\Screenshot 2024-09-14 142020.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\BaiTapKiemTra01\\wwwroot\\img\\anhchup\\Screenshot 2024-09-14 142027.png",
+      "PackagePath": "staticwebassets\\img\\anhchup\\Screenshot 2024-09-14 142027.png"
+    },
+    {
       "Id": "E:\\NoName\\asp_wed\\BaiTapKiemTra01\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
