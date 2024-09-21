@@ -13,6 +13,7 @@
                     <td width=" 30%"> @item.Name</td>
                     <td width="30%"> @String.Format("{0:dd/MM/yyyy}",item.DateCreated)</td>
                     <td><a asp-action="Edit" asp-route-id="@item.Id"> Edit</a> </td>
+                    <td><a asp-action="Delete" asp-route-id="@item.Id"> Delete</a> </td>
                 </tr>
             }
         </tbody>
