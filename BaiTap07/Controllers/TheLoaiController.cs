@@ -84,5 +84,35 @@ namespace BaiTap07.Controllers
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public IActionResult Details(int id)
+        {
+            if (id == 0)
+            {
+                return NotFound();
+            }
+
+            var theloai = _db.TheLoai.Find(id);
+
+            if (theloai == null)
+            {
+                return NotFound();
+            }
+
+            return View(theloai);
+        }
+
+        [HttpPost]
+        public IActionResult DetailsConfirm(int id)
+        {
+            var theloai = _db.TheLoai.Find(id);
+
+            if (theloai == null)
+            {
+                return NotFound();
+            }
+            return RedirectToAction("Details", new { id = id });
+        }
     }
 }
