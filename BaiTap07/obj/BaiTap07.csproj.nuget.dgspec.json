@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "E:\\NoName\\asp_wed\\Baitap07\\BaiTap07.csproj": {}
+    "E:\\NoName\\asp_wed\\BaiTap07\\BaiTap07.csproj": {}
   },
   "projects": {
-    "E:\\NoName\\asp_wed\\Baitap07\\BaiTap07.csproj": {
+    "E:\\NoName\\asp_wed\\BaiTap07\\BaiTap07.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\NoName\\asp_wed\\Baitap07\\BaiTap07.csproj",
+        "projectUniqueName": "E:\\NoName\\asp_wed\\BaiTap07\\BaiTap07.csproj",
         "projectName": "BaiTap07",
-        "projectPath": "E:\\NoName\\asp_wed\\Baitap07\\BaiTap07.csproj",
+        "projectPath": "E:\\NoName\\asp_wed\\BaiTap07\\BaiTap07.csproj",
         "packagesPath": "C:\\Users\\luong\\.nuget\\packages\\",
         "outputPath": "E:\\NoName\\asp_wed\\Baitap07\\obj\\",
         "projectStyle": "PackageReference",

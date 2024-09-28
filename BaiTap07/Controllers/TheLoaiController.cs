@@ -1,6 +1,8 @@
 ﻿using BaiTap07.Data;
 using BaiTap07.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace BaiTap07.Controllers
 {
@@ -37,7 +39,6 @@ namespace BaiTap07.Controllers
             }
             return View();
         }
-        [HttpGet]
         public IActionResult Edit(int id)
         {
             if (id == 0)
@@ -84,35 +85,34 @@ namespace BaiTap07.Controllers
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
-
-        [HttpGet]
-        public IActionResult Details(int id)
+        [HttpPost]
+        public IActionResult Detail(int id)
         {
             if (id == 0)
             {
                 return NotFound();
             }
-
             var theloai = _db.TheLoai.Find(id);
-
-            if (theloai == null)
-            {
-                return NotFound();
-            }
-
             return View(theloai);
         }
-
-        [HttpPost]
-        public IActionResult DetailsConfirm(int id)
+        [HttpGet]
+        public IActionResult Search(string searchString)
         {
-            var theloai = _db.TheLoai.Find(id);
-
-            if (theloai == null)
+            if (!string.IsNullOrEmpty(searchString))
             {
-                return NotFound();
+                // sử dụng linq
+                var theloai = _db.TheLoai.
+                Where(tl => tl.Name.Contains(searchString)).ToList();
+
+                ViewBag.SearchString = searchString;
+                ViewBag.TheLoai = theloai;
             }
-            return RedirectToAction("Details", new { id = id });
+            else
+            {
+                var theloai = _db.TheLoai.ToList();
+                ViewBag.TheLoai = theloai; 
+            }
+            return View("Index");
         }
     }
 }
