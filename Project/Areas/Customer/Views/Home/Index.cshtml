@@ -1,0 +1,29 @@
+﻿@model IEnumerable<SanPham>
+<div class="row">
+    @foreach (var item in @Model)
+    {
+         <div class="col-3 p-3">
+        <div class="card" style="width: 20rem;">
+               <a asp-action="Deteails" asp-route-id="@item.Id">
+                    <img src="@item.ImageUrl" alt="" class="product-image" />
+               </a>
+            <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                    @{
+                        string Price = item.Price.ToString("#,0", System.Globalization.CultureInfo.GetCultureInfo("vi-VN"));
+                                <h4 class="card-title text-danger">@Price đ</h4>
+                    }
+
+                    <p class="card-text">@item.Description</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="#" class="btn btn-primary">Thêm &#10084;</a>
+                        </div>
+                        <div class="col-6">
+                <a href="#" class="btn btn-danger">Mua Hàng</a>
+                            </div>
+            </div>
+        </div>
+        </div>
+        </div>          
+    }

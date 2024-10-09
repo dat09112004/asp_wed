@@ -1,49 +1,42 @@
-﻿@model SanPham
+﻿
+@model SanPham
 <div class="container">
-    <h3> Thêm/chỉnh sửa sản phẩm</h3>
-    <form method="post" action="Upsert">
-        <input asp-for="Id" type="hidden" />
-        <div asp-validation-summary="All" class="text-danger"></div>
+    <form method="post" asp-action="Upsert">
         <div class="form-group">
-            <label asp-for="Name"> Tên sản phẩm </label>
+            <label asp-for="Name">Tên Sản Phẩm</label>
             <input asp-for="Name" type="text" class="form-control" />
             <span asp-validation-for="Name" class="text-danger"></span>
         </div>
         <div class="form-group">
-            <label asp-for="Description"> Mô tả </label>
+            <label asp-for="Description">Mô Tả</label>
             <input asp-for="Description" type="text" class="form-control" />
             <span asp-validation-for="Description" class="text-danger"></span>
         </div>
-
         <div class="form-group">
-            <label asp-for="Price">Giá bán</label>
+            <label asp-for="Price">Giá Bán</label>
             <input asp-for="Price" type="text" class="form-control" />
             <span asp-validation-for="Price" class="text-danger"></span>
         </div>
-
         <div class="form-group">
-            <label asp-for="ImageUrl">Hình ảnh</label>
+            <label asp-for="ImageUrl">Hình Ânh</label>
             <input asp-for="ImageUrl" type="text" class="form-control" />
             <span asp-validation-for="ImageUrl" class="text-danger"></span>
         </div>
-
-
         <div class="form-group">
-            <label asp-for="TheLoaiId">Thể loại</label>
+            <label asp-for="TheLoaiId">Thể Loại</label>
             <select asp-for="TheLoaiId" asp-items="@ViewBag.DSTheLoai" class="form-control">
-                <option disabled>Chọn thể loại</option>
+                <option disabled>Chọn Thể Loại</option>
             </select>
-            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+            <span asp-validation-for="TheLoaiId" class="text-danger"></span>
         </div>
-
-
-        <button type="submit" class="btn btn-primary">@(Model.Id == 0 ? "Tạo mới" : "Cập nhật")</button>
+        <button type="submit" class="btn btn-primary">@(Model.Id == 0 ? "Tạo Mới" : "Cập Nhật")</button>
         <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+
     </form>
 </div>
-
-@section Scripts {
+@section Scripts{
     @{
         <partial name="_ValidationScriptsPartial" />
     }
 }
+

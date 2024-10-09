@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Project.Data;
@@ -7,6 +8,7 @@ using Project.Models;
 namespace Project.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles ="Admin")]
     public class SanPhamController : Controller
     {
         private readonly ApplicationDbContext _db;
@@ -41,7 +43,6 @@ namespace Project.Controllers
                 sanpham = _db.SanPham.Include("TheLoai").FirstOrDefault(sp => sp.Id == id);
                 return View(sanpham);
             } 
-                
         }
         [HttpPost]
         public IActionResult Upsert(SanPham sanpham)
@@ -56,15 +57,23 @@ namespace Project.Controllers
                 {
                     _db.SanPham.Update(sanpham);
                 }
-                    
-                // Thêm thông tin vào bảng TheLoai
-                _db.SanPham.Add(sanpham);
-                // Lưu lại
                 _db.SaveChanges();
-                // Chuyển trang về index
                 return RedirectToAction("Index");
             }
             return View();
+
+        }
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            var sanpham = _db.SanPham.FirstOrDefault(sp => sp.Id == id);
+            if (sanpham == null)
+            {
+                return NotFound();
+            }
+            _db.SanPham.Remove(sanpham);
+            _db.SaveChanges();
+            return Json(new { success = true });
         }
 
     }
