@@ -6,42 +6,91 @@
     <title>@ViewData["Title"] - Project</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Project.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Project</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                    <partial name="_LoginPartial" />
-                </div>
-            </div>
-        </nav>
-    </header>
+      <!-- Thanh menu-->
+  <div class="wrapper">
+   <header class="header">
+       <div class="header__container container">
+           <div class="menu__icon">
+               <span></span>
+           </div>
+           <div class="header__logo">
+                    <a href=""> <img src="~/img/logo3.png" alt=""></a>
+           </div>
+           <!-- Thêm mục lục-->
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__link" href="#">Mục lục</a>
+                    </li>
+                    @await Component.InvokeAsync("TheLoai")
+                    <li class="header__item">
+                        <a class="header__link" href="#">Thông tin cửa hàng</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">Chọn một bó hoa</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">Liên lạc</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Thêm các trên thanh menu icon-->
+            <div class="header__icons">
+                    <a href=""><img class="header__lupa" src="~/img/timkiem.png" alt=""></a>
+                    <a href=""><img class="header__basket" src="~/img/giohang.png" alt=""></a>
+            </div> 
+            <partial name="_LoginPartial" />
+        </div>
+   </header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
-   <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - Project - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+    
+    <footer>
+      <div class="footer__container container">
+                <div class="footer__logo"><img src="~/img/logo3.png" alt=""></div>
+       <div class="footer__body">
+           <ul class="footer__list">
+               <li class="footer__item"><span>Liên hệ</span></li>
+               <li class="footer__item">(+84) 000 000 0000</li>
+               <li class="footer__item">(+84) 000 000 0000</li>
+               <li class="footer__item">Chúng tôi làm việc: <br> 24/7</li>
+           </ul>
+           <ul class="footer__list">
+               <li class="footer__item"><span>Thông tin</span></li>
+               <li class="footer__item"> Về cửa hàng</li>
+               <li class="footer__item">Đợt giảm giá</li>
+               <li class="footer__item">Đánh giá</li>
+               <li class="footer__item">Giao hàng và thanh toán</li>
+           </ul>
+           <ul class="footer__list">
+               <li class="footer__item"><span>Mục lục</span></li>
+               <li class="footer__item">Bó hoa của bạn</li>
+               <li class="footer__item">Những bông hoa tươi</li>
+               <li class="footer__item">Các loại hoa theo yêu cầu</li>
+           </ul>
+           <div class="footer__rightPiece">
+                <div class="footer">Điền Email của bạn:</div>
+               <form class="footer__button">
+                   <input class="footer__addEmail" type="text" placeholder="Nhập e-mail của bạn">
+                   <button class="footer__submit" type="button">Đăng kí</button>
+               </form>
+               <!--Thêm icon-->
+               <div class="footer__socials">
+                            <a href="#"><img src="~/img/inst.png" alt=""></a>
+                            <a href="#"><img src="~/img/fb.png" alt=""></a>
+               </div>
+               <div class="footer">Cảm ơn đã ủng hộ</div>
+           </div>
+       </div>
+      </div>
+   </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

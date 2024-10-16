@@ -9,8 +9,176 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\Arrow 1.png",
+      "PackagePath": "staticwebassets\\img\\Arrow 1.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\Arrow 2.png",
+      "PackagePath": "staticwebassets\\img\\Arrow 2.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\abstract_background.png",
+      "PackagePath": "staticwebassets\\img\\abstract_background.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\avt_Photo.jpg",
+      "PackagePath": "staticwebassets\\img\\avt_Photo.jpg"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\backgr2.png",
+      "PackagePath": "staticwebassets\\img\\backgr2.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\bg_mob-no-background.png",
+      "PackagePath": "staticwebassets\\img\\bg_mob-no-background.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\bg_web-no-background.png",
+      "PackagePath": "staticwebassets\\img\\bg_web-no-background.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\boahoa3.jpg",
+      "PackagePath": "staticwebassets\\img\\boahoa3.jpg"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\bohoa1.jpg",
+      "PackagePath": "staticwebassets\\img\\bohoa1.jpg"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\bohoa2.jpg",
+      "PackagePath": "staticwebassets\\img\\bohoa2.jpg"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\bohoa4.jpg",
+      "PackagePath": "staticwebassets\\img\\bohoa4.jpg"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\bohoa5.jpg",
+      "PackagePath": "staticwebassets\\img\\bohoa5.jpg"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\bohoa6.jpg",
+      "PackagePath": "staticwebassets\\img\\bohoa6.jpg"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\bouquet_cart1 1.png",
+      "PackagePath": "staticwebassets\\img\\bouquet_cart1 1.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\bouquet_cart2 1.png",
+      "PackagePath": "staticwebassets\\img\\bouquet_cart2 1.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\bouquet_cart3 1.png",
+      "PackagePath": "staticwebassets\\img\\bouquet_cart3 1.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\bouquet_cart4 1.png",
+      "PackagePath": "staticwebassets\\img\\bouquet_cart4 1.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\bouquet_cart5 1.png",
+      "PackagePath": "staticwebassets\\img\\bouquet_cart5 1.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\bouquet_cart6 1.png",
+      "PackagePath": "staticwebassets\\img\\bouquet_cart6 1.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\bouquets.jpg",
+      "PackagePath": "staticwebassets\\img\\bouquets.jpg"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\constructor.png",
+      "PackagePath": "staticwebassets\\img\\constructor.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\delivery.png",
+      "PackagePath": "staticwebassets\\img\\delivery.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\fb.png",
+      "PackagePath": "staticwebassets\\img\\fb.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\flower3.jpg",
+      "PackagePath": "staticwebassets\\img\\flower3.jpg"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\flower4.jpg",
+      "PackagePath": "staticwebassets\\img\\flower4.jpg"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\flower5.jpg",
+      "PackagePath": "staticwebassets\\img\\flower5.jpg"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\flower6.jpg",
+      "PackagePath": "staticwebassets\\img\\flower6.jpg"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\flower7.jpg",
+      "PackagePath": "staticwebassets\\img\\flower7.jpg"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\flower8.jpg",
+      "PackagePath": "staticwebassets\\img\\flower8.jpg"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\flowers 1.png",
+      "PackagePath": "staticwebassets\\img\\flowers 1.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\flowers 2.png",
+      "PackagePath": "staticwebassets\\img\\flowers 2.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\flowers 3.png",
+      "PackagePath": "staticwebassets\\img\\flowers 3.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\for_loved_ones.png",
+      "PackagePath": "staticwebassets\\img\\for_loved_ones.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\giohang.png",
+      "PackagePath": "staticwebassets\\img\\giohang.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\indoor.png",
+      "PackagePath": "staticwebassets\\img\\indoor.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\inst.png",
+      "PackagePath": "staticwebassets\\img\\inst.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\logo3.png",
+      "PackagePath": "staticwebassets\\img\\logo3.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\natural_flowers.jpg",
+      "PackagePath": "staticwebassets\\img\\natural_flowers.jpg"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\own_bouquet.png",
+      "PackagePath": "staticwebassets\\img\\own_bouquet.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\img\\timkiem.png",
+      "PackagePath": "staticwebassets\\img\\timkiem.png"
+    },
+    {
+      "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\js\\javascript.js",
+      "PackagePath": "staticwebassets\\js\\javascript.js"
     },
     {
       "Id": "E:\\NoName\\asp_wed\\Project\\wwwroot\\js\\site.js",

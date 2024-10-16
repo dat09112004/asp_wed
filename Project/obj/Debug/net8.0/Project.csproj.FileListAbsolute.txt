@@ -165,8 +165,6 @@ E:\NoName\asp_wed\Project\bin\Debug\net8.0\refs\Microsoft.Extensions.Configurati
 E:\NoName\asp_wed\Project\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
 E:\NoName\asp_wed\Project\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
 E:\NoName\asp_wed\Project\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.Xml.dll
-E:\NoName\asp_wed\Project\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-E:\NoName\asp_wed\Project\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.dll
 E:\NoName\asp_wed\Project\bin\Debug\net8.0\refs\Microsoft.Extensions.Diagnostics.Abstractions.dll
 E:\NoName\asp_wed\Project\bin\Debug\net8.0\refs\Microsoft.Extensions.Diagnostics.dll
 E:\NoName\asp_wed\Project\bin\Debug\net8.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
@@ -589,3 +587,5 @@ E:\NoName\asp_wed\Project\bin\Debug\net8.0\runtimes\win-arm\native\e_sqlite3.dll
 E:\NoName\asp_wed\Project\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 E:\NoName\asp_wed\Project\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 E:\NoName\asp_wed\Project\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+E:\NoName\asp_wed\Project\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+E:\NoName\asp_wed\Project\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
