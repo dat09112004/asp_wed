@@ -1,4 +1,4 @@
-﻿@model SanPham
+﻿@model GioHang
 <style>
     .product-image {
         max-width: 100%;
@@ -22,36 +22,36 @@
     }
 </style>
 <div class="container mt-5">
+    <form method="post">
+        <input type="hidden" sanphamid ="@Model.SanPham.Id"/>
     <div class="row">
         <!-- Product Image -->
         <div class="col-md-6">
-            <img src="@Model.ImageUrl" alt="Product Image" class="product-image">
+            <img src="@Model.SanPham.ImageUrl" alt="Product Image" class="product-image">
         </div>
 
         <!-- Product Details -->
         <div class="col-md-6">
-            <h1 class="product-title">@Model.Name</h1>
-            <p class="product-description">@Model.Description</p>
+            <h1 class="product-title">@Model.SanPham.Name</h1>
+            <p class="product-description">@Model.SanPham.Description</p>
             @{
-                string Price = Model.Price.ToString("#,0", System.Globalization.CultureInfo.GetCultureInfo("vi-VN"));
+                string Price = Model.SanPham.Price.ToString("#,0", System.Globalization.CultureInfo.GetCultureInfo("vi-VN"));
                 <h4 class="text-danger">@Price đ</h4>
             }
 
             <!-- Quantity Selector -->
             <div class="quantity-control my-3">
-                <button class="btn btn-outline-secondary" onclick="decreaseQuantity()">-</button>
-                <input type="text" class="form-control quantity-input mx-2" id="quantity" value="1" readonly>
-                <button class="btn btn-outline-secondary" onclick="increaseQuantity()">+</button>
+                <a class="btn btn-outline-secondary" onclick="decreaseQuantity()">-</a>
+                <input asp-for="@Model.Quantity" id="quantity" type="number" class="form-control quantity-input mx-2" value="@Model.Quantity" readonly>
+                <a class="btn btn-outline-secondary" onclick="increaseQuantity()">+</a>
             </div>
 
             <!-- Add to Cart Button -->
             <div class="row">
-                <div class="col-6">
-                    <a href="#" class="btn btn-primary">Thêm &#10084;</a>
+                <div class="col-12">
+                    <button style="submit" class="btn btn-primary">Thêm vào giỏ hàng &#10084; </button>
                 </div>
-                <div class="col-6">
-                    <a href="#" class="btn btn-danger">Mua Hàng</a>
-                </div>
+                
 
                 <!-- Success Message -->
                 <div id="cart-message" class="alert alert-success mt-3 d-none">
@@ -59,6 +59,7 @@
                 </div>
             </div>
         </div>
+    </form>
     </div>
 
     <!-- Bootstrap JS and Popper.js -->

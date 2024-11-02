@@ -15,23 +15,25 @@
    <header class="header">
        <div class="header__container container">
            <div class="menu__icon">
-               <span></span>
+               <span>
+
+               </span>
            </div>
            <div class="header__logo">
-                    <a href=""> <img src="~/img/logo3.png" alt=""></a>
+                    <a href="/Customer/Home/Index"> <img src="~/img/logo3.png" alt=""></a>
            </div>
            <!-- Thêm mục lục-->
             <nav class="header__menu">
                 <ul class="header__list">
                     <li class="header__item">
-                        <a class="header__link" href="#">Mục lục</a>
+                            <a class="header__link" href="/Customer/Home/Index">Trang Chủ</a>
                     </li>
-                    @await Component.InvokeAsync("TheLoai")
+                    <li class="header__item">
+                            @await Component.InvokeAsync("TheLoai")
+                    </li>
+                    
                     <li class="header__item">
                         <a class="header__link" href="#">Thông tin cửa hàng</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="#">Chọn một bó hoa</a>
                     </li>
                     <li class="header__item">
                         <a class="header__link" href="#">Liên lạc</a>
@@ -41,11 +43,15 @@
             <!-- Thêm các trên thanh menu icon-->
             <div class="header__icons">
                     <a href=""><img class="header__lupa" src="~/img/timkiem.png" alt=""></a>
-                    <a href=""><img class="header__basket" src="~/img/giohang.png" alt=""></a>
+                    <a href="/Customer/GioHang/Index"><img class="header__basket" src="~/img/giohang.png" alt=""></a>
             </div> 
-            <partial name="_LoginPartial" />
+            <div class="header__item">
+                    <partial name="_LoginPartial" />
+            </div>
+            
         </div>
    </header>
+       
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -94,6 +100,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/javascript.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

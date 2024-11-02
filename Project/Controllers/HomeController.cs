@@ -1,8 +1,10 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Project.Data;
 using Project.Models;
 using System.Diagnostics;
+using System.Security.Claims;
 
 namespace Project.Controllers
 {
@@ -24,14 +26,36 @@ namespace Project.Controllers
             return View(sanpham);
         }
         [HttpGet]
-        public IActionResult Details(int id)
+        public IActionResult Details(int sanphamid)
         {
-            var sanpham = _db.SanPham.FirstOrDefault(sp => sp.Id == id);
-            if (sanpham == null)
+            GioHang giohang = new GioHang()
             {
-                return NotFound();
+                SanPhamId = sanphamid,
+                SanPham = _db.SanPham.Include("TheLoai").FirstOrDefault(sp => sp.Id == sanphamid),
+                Quantity = 1
+            };
+            return View(giohang);
+        }
+        [HttpPost]
+        [Authorize]
+        public IActionResult Details(GioHang giohang)
+        {
+            var indentity = (ClaimsIdentity)User.Identity;
+            var claim = indentity.FindFirst(ClaimTypes.NameIdentifier);
+            giohang.ApplicationUserId = claim.Value;
+            var giohangdb = _db.GioHang.FirstOrDefault(sp => sp.SanPhamId == giohang.SanPhamId
+                && sp.ApplicationUserId == giohang.ApplicationUserId);
+            if (giohangdb == null) 
+            {
+                _db.Add(giohang);
             }
-            return View(sanpham);
+            else
+            {
+                giohangdb.Quantity += giohang.Quantity;
+            }
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+
         }
         public IActionResult Privacy()
         {

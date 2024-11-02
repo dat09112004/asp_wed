@@ -1,0 +1,31 @@
+﻿@model IEnumerable<HoaDon>
+<div class="table">
+    <table>
+        <thead>
+            <tr>
+                <th>Người Mua </th>
+                <th>Số Điện Thoại </th>
+                <th>Địa chỉ</th>
+                <th>Trạng Thái</th>
+                <th>Tổng Tiền</th>
+                <th>Chức Năng</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in @Model)
+            {
+                <tr>
+
+                    <td>@item.Name</td>
+                    <td>@item.PhoneNumber</td>
+                    <td>@item.Address</td>
+                    <td>@item.OrderStatus</td>
+                    <td>@item.Total</td>
+                    <td>
+                        <a asp-action="Sua" asp-route-id="@item.Id">Edit</a>|
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

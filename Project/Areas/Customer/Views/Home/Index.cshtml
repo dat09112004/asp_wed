@@ -1,29 +1,56 @@
 ﻿@model IEnumerable<SanPham>
-<div class="row">
-    @foreach (var item in @Model)
-    {
-         <div class="col-3 p-3">
-        <div class="card" style="width: 15rem;">
-               <a asp-action="Deteails" asp-route-id="@item.Id">
-                    <img src="@item.ImageUrl" alt="" class="product-image" style="width: 200px" />
-               </a>
-            <div class="card-body">
-                        <h5 class="card-title">@item.Name</h5>
-                    @{
-                        string Price = item.Price.ToString("#,0", System.Globalization.CultureInfo.GetCultureInfo("vi-VN"));
-                                <h4 class="card-title text-danger">@Price đ</h4>
-                    }
-
-                    <p class="card-text">@item.Description</p>
-                    <div class="row">
-                        <div class="col-6">
-                            <a href="#" class="btn btn-primary">Thêm &#10084;</a>
-                        </div>
-                        <div class="col-6">
-                <a href="#" class="btn btn-danger">Mua Hàng</a>
-                            </div>
+<section class="intro">
+    <div class="intro__container container">
+        <div class="intro__body">
+            <h1 class="intro__title">
+                Chào mừng bạn đến The Fresh Garden! 🌟<br>
+                “Hạnh phúc được chờ đợi từ lâu”
+            </h1>
+            <p class="intro__text">
+                Nơi đây có mọi thứ bạn cần để thỏa mãn niềm đam mê mua sắm.<br>
+                Chúng tôi cam kết mang đến cho bạn sản phẩm chất lượng, giá cả phải chăng và dịch vụ tận tâm.<br>
+                Hãy để chúng tôi làm cho ngày của bạn trở nên tuyệt vời hơn!
+            </p>
+            <div class="intro__buttons">
+                <button class="intro__button-basket">
+                    <a href="#"> Like</a>
+                </button>
             </div>
         </div>
+        <figure class="about__socials">
+            <div class="about__figure">
+                <img class="about__women" src="~/img/backgr2.png" alt="">
+                <img class="about__abstraction" src="~/img/abstract_background.png" alt="">
+                <div class="social-icons">
+                    <a href="#"><img src="~/img/inst.png" alt=""></a>
+                    <a href="#"><img src="~/img/fb.png" alt=""></a>
+                </div>
+            </div>
+        </figure>
+</section>
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-3 p-3">
+            <div class="card h-100 d-flex flex-column" style="width: 18rem; min-height: 500px;">
+                <a asp-action="Details" asp-route-sanphamid=" @item.Id">
+                    <img src="@item.ImageUrl" class="card-img-top" alt="@item.Name" style="height: 200px; object-fit: cover;">
+                </a>
+               
+                <div class="card-body d-flex flex-column" style="flex-grow: 1;">
+                    <h4 class="card-title text-danger">@item.Price.ToString("N0") VND</h4>
+                    <h5 class="card-title" style="min-height: 40px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">@item.Name</h5>
+                    <p class="card-text" style="min-height: 80px; max-height: 80px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">@item.Description</p>
+                    <div class="mt-auto row">
+                        <div class="col-6">
+                            <a href="#" class="btn btn-primary w-100">Thêm &#10084;</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="btn btn-danger w-100">Mua hàng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>          
     }
+</div>

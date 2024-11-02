@@ -1,16 +1,20 @@
 ﻿@model IEnumerable<TheLoai>
-<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        The Loai
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-        @foreach (var item in Model)
-        {
-            <li>
-                <a class="dropdown-item"
-                   asp-action="FilterByTheLoai"
-                    asp-route-id="@item.Id">@item.Name</a>
-            </li>
-        }
-    </ul>
-</li>
+<header class="header">
+    <nav class="header__menu">
+        <li class="nav-item dropdown header__list">
+            <a class="nav-link dropdown-toggle header__item" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 16px;font-weight: bold;  color: white;">
+                Thể Loại
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                @foreach (var item in Model)
+                {
+                    <li>
+                        <a class="dropdown-item"
+                           asp-action="FilterByTheLoai"
+                            asp-route-id="@item.Id">@item.Name</a>
+                    </li>
+                }
+            </ul>
+        </li>
+    </nav>
+</header>
