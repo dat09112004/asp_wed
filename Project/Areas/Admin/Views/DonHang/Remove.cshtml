@@ -1,0 +1,62 @@
+﻿@model HoaDon
+<div class="container">
+    <h3>Xác Nhận Hủy Đơn Hàng</h3>
+    <form method="post" asp-action="RemoveConform">
+        <input type="hidden" asp-for="Id" />
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Total"></label>
+            <input asp-for="Total" type="text" class="form-control" readonly />
+            <span asp-validation-for="Total" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="OrderDate"></label>
+            <input asp-for="OrderDate" type="text" class="form-control" readonly />
+            <span asp-validation-for="OrderDate" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="PhoneNumber"></label>
+            <input asp-for="PhoneNumber" type="text" class="form-control" readonly />
+            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" type="text" class="form-control" readonly />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Address"></label>
+            <input asp-for="Address" type="text" class="form-control" readonly />
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="CancelReason">Lý do hủy đơn</label>
+            <select id="CancelReason" name="CancelReason" class="form-control" required>
+                <option value="">-- lý do hủy đơn --</option>
+                <option value="Tìm được sản phẩm giá hợp lí hơn">Tìm được sản phẩm giá hợp lí hơn</option>
+                <option value="Thây đổi thời gian giao hàng ">Thây đổi thời gian giao hàng</option>
+                <option value="Lý do khác">Lý do khác</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Xóa</button>
+        <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+    </form>
+</div>
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    <script>
+        function confirmCancel() {
+            const reason = document.getElementById("CancelReason").value;
+            if (reason === "") {
+                alert("Vui lòng chọn lý do hủy đơn!");
+                return false; // Ngăn chặn việc submit khi chưa chọn lý do
+            }
+
+            // Hiển thị message box xác nhận với lý do hủy
+            return confirm("Bạn có chắc chắn muốn hủy đơn hàng với lý do: " + reason + "?");
+        }
+    </script>
+}

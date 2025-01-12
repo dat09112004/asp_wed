@@ -1,4 +1,71 @@
 ﻿@model IEnumerable<HoaDon>
+<style>
+    table {
+        width: 100%; /* Stretch the table to the container's width */
+        border-collapse: collapse; /* Remove double borders between cells */
+        background-color: #F5F5F5; /* Light background color */
+    }
+
+    /* Apply to table headers */
+    th {
+        background-color: #A3C1DA; /* Light blue for the header */
+        color: #333333; /* Darker text for readability */
+        padding: 12px; /* Space inside cells */
+        text-align: center; /* Center align headers */
+        border-bottom: 2px solid #B0C4DE; /* Add bottom border */
+    }
+
+    /* Apply to table rows */
+    td {
+        padding: 10px; /* Space inside cells */
+        text-align: center; /* Center align content */
+        border-bottom: 1px solid #ddd; /* Light border for separation */
+    }
+
+    /* Hover effect for rows */
+    tr:hover {
+        background-color: #f1f1f1; /* Light gray when hovering over rows */
+    }
+
+    /* Style for the links in "Chức Năng" column */
+    td a {
+        color: #1a73e8; /* Google-like blue color for links */
+        text-decoration: none; /* Remove underline */
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+
+        /* Add background color on link hover */
+        td a:hover {
+            background-color: #e8f0fe; /* Light blue background on hover */
+        }
+
+    /* Adjust specific column widths */
+    th:nth-child(1), td:nth-child(1) {
+        width: 20%;
+    }
+    /* Adjust Người Mua column width */
+    th:nth-child(2), td:nth-child(2) {
+        width: 15%;
+    }
+    /* Adjust Số Điện Thoại column width */
+    th:nth-child(3), td:nth-child(3) {
+        width: 25%;
+    }
+    /* Adjust Địa chỉ column width */
+    th:nth-child(4), td:nth-child(4) {
+        width: 20%;
+    }
+    /* Adjust Trạng Thái column width */
+    th:nth-child(5), td:nth-child(5) {
+        width: 10%;
+    }
+    /* Adjust Tổng Tiền column width */
+    th:nth-child(6), td:nth-child(6) {
+        width: 10%;
+    }
+    /* Adjust Chức Năng column width */
+</style>
 <div class="table">
     <table>
         <thead>
@@ -22,7 +89,9 @@
                     <td>@item.OrderStatus</td>
                     <td>@item.Total</td>
                     <td>
-                        <a asp-action="Sua" asp-route-id="@item.Id">Edit</a>|
+                        <a asp-action="Sua" asp-route-id="@item.Id">Edit</a>
+                        <a asp-action="Remove" asp-route-id="@item.Id">Delete</a>
+                        <a asp-action="" asp-route-id="@item.Id">Detail</a>
                     </td>
                 </tr>
             }

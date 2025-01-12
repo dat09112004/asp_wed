@@ -30,6 +30,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRG9uSGFuZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/NoName/asp_wed/Project/Areas/Admin/Views/DonHang/Remove.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRG9uSGFuZ1xSZW1vdmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/NoName/asp_wed/Project/Areas/Admin/Views/DonHang/Sua.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRG9uSGFuZ1xTdWEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Project.Data;
 using Project.Models;
@@ -6,6 +7,7 @@ using Project.Models;
 namespace Project.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class DonHangController : Controller
     {
         private readonly ApplicationDbContext _db;
@@ -40,6 +42,29 @@ namespace Project.Controllers
                 return RedirectToAction("Index");
             }
             return View();
+        }
+        [HttpGet]
+        public IActionResult Remove(int id)
+        {
+            if (id == 0)
+            {
+                return NotFound();
+            }
+            var hoadon = _db.HoaDon.Find(id);
+            return View(hoadon);
+        }
+
+        [HttpPost]
+        public IActionResult RemoveConform(int id)
+        {
+            var hoadon = _db.HoaDon.Find(id);
+            if (hoadon == null)
+            {
+                return NotFound();
+            }
+            _db.HoaDon.Remove(hoadon);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }
